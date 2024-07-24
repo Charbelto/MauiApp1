@@ -1,0 +1,18 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MauiApp1"
+             x:Class="MauiApp1.Homepage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
+        <!-- Profile Picture Display -->
+        <Image x:Name="ProfileImage" Source="{Binding UserProfileImage}" WidthRequest="150" HeightRequest="150" Aspect="AspectFill" />
+
+        <!-- Button to Change Profile Picture -->
+        <Button x:Name="ChangeProfilePictureButton"
+                Text="Change Profile Picture"
+                Clicked="OnChangeProfilePictureClicked"
+                IsEnabled="False"/>
+        <!-- Initially disabled -->
+    </StackLayout>
+
+</ContentPage>

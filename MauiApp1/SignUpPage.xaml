@@ -1,0 +1,11 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.SignUpPage">
+
+    <StackLayout Padding="30">
+        <Entry x:Name="UsernameEntry" Placeholder="{DynamicResource Username}" />
+        <Entry x:Name="PasswordEntry" Placeholder="{DynamicResource Password}" IsPassword="True" />
+        <Button Text="{DynamicResource SignUp}" Clicked="OnSignUpButtonClicked" />
+    </StackLayout>
+
+</ContentPage>

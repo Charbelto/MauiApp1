@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.SettingsPage"
+             Title="{StaticResource Settings}">
+    <StackLayout Padding="20">
+        <Label Text="{DynamicResource Choose Style}" FontSize="Large"/>
+        <Picker x:Name="StylePicker" SelectedIndexChanged="OnStylePickerSelectedIndexChanged">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Light Blue</x:String>
+                    <x:String>Dark Blue</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <Label Text="{DynamicResource Choose Language}" FontSize="Large" Margin="0,20,0,0"/>
+        <Picker x:Name="LanguagePicker" SelectedIndexChanged="OnLanguagePickerSelectedIndexChanged">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>English</x:String>
+                    <x:String>Arabic</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+    </StackLayout>
+</ContentPage>

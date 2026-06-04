@@ -108,3 +108,4 @@ dotnet run -f net8.0-android
 2. Select `MauiApp1` as the startup project.
 3. In the debug target dropdown, choose your target platform (e.g. `Framework -> net8.0-windows` or `Android Emulators`).
 4. Press **F5** to build and run.
+ 
